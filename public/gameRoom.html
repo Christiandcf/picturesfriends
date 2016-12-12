@@ -1,0 +1,48 @@
+<head>
+    <title>Pictures with Friends</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <style>
+    #main {
+        text-align: center;
+        display: none;
+    }
+    </style>
+
+</head>
+
+<body align="center" id="main">
+    <h1 id="title">Pictures with Friends</h1>
+    <h3 id="playerType">-</h3>
+
+    <form>
+        <button id="gen" type="button" class="btn btn-default">GENERATE</button>
+        <h3 id="randWord">-</h3>
+        <ul id="messages"></ul>
+
+    </form>
+
+    <form>
+        <input type="text" id="answer">
+        <button id="check" type="submit" class="btn btn-success">ENTER</button>
+    </form>
+
+    <form>
+        <button id="drawerBtn" type="button" class="btn btn-primary">Drawer</button>
+        <button id="playerBtn" type="button" class="btn btn-primary">Player</button>
+    </form>
+
+    <form>
+        <button id="room1" type="button" class="btn btn-info">Room 1</button>
+        <button id="room2" type="button" class="btn btn-danger">Room 2</button>
+        <button id="dropit" type="button" class="btn btn-default">DROP IT</button>
+    </form>
+
+
+</body>
+
+<script src="/public/js/wordGenerator.js"></script>
