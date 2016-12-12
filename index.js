@@ -51,7 +51,6 @@ io.on('connection', function(socket) {
 
     // add handler for message type "draw_line".
     socket.on('draw_line', function (data) {
-      console.log('room is: ' + socket.room);
        // send line to all clients
        io.to(socket.room).emit('draw_line', { line: data.line });
     });

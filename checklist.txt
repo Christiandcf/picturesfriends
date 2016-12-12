@@ -1,0 +1,13 @@
+Please emphasize on the following:
+
+ - Game Room displayed
+ - Words are generated
+ - Game starts at the same time in both windows
+ - Able to input answer in the player view
+ - Draw on the player side
+ - Joining a room and been able to play with two players or more players
+ - Starting a game in a room will not interfere in other games
+
+If any issues please feel free to email:
+cdcf@iastate.edu
+faizulj@iastate.edu
