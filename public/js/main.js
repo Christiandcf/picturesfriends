@@ -5,16 +5,7 @@ var socket = io.connect();
  */
 
 // This are only the divisions
-// var $firstPage = $('#firstPage');
-// var $gameRoom = $('#gameRoom');
-//
-// var $answer = $('#answer'); // Input answer
-// var $check = $('#check'); // Check button
-// var $gen = $('#gen'); // Generate button
-// var $playerType = $('#playerType'); // Just a checker
-// var $randWord = $('#randWord'); // Generated word space
-// var $drawerBtn = $('#drawerBtn'); // Toggles to become a drawer
-// var $playerBtn = $('#playerBtn'); // Toggles to become a plyer
+
 var status = 'player'; // true is drawer, false is player
 var rand = 0;
 var lives = 3; // total lives
@@ -196,8 +187,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     canvas.onmousemove = function(e) {
         // normalize mouse position to range 0.0 - 1.0
-        mouse.pos.x = (e.clientX / width) - 0.94;
-        mouse.pos.y = (e.clientY / height) - 0.34;
+        mouse.pos.x = (e.clientX / width) - 0.79;
+        mouse.pos.y = (e.clientY / height) - 0.20;
         mouse.move = true;
     };
 
@@ -292,7 +283,6 @@ socket.on('reset', function(data) {
 
 socket.on('winning', function(data) {
   $('#timer_div').text('WINNER is: ' + data);
-  alert('WINNER: ' + data);
   clearCanvas = true;
   clearInterval(interval);
   $('#drawing').hide();
